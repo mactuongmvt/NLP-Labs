@@ -4,9 +4,9 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 
 ## Thông tin sinh viên
 
-- Họ và tên: _Cập nhật sau_
-- Mã sinh viên: _Cập nhật sau_
-- Lớp học phần: _Cập nhật sau_
+- Họ và tên: Mạc Văn Tường
+- Mã sinh viên: 23001951
+- Lớp học phần: MAT3561E 4
 
 ## Danh sách bài thực hành
 
