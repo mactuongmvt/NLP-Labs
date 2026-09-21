@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Large generated artifacts
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Dataset files are ignored by default; keep documentation
+data/*
+!data/README.md
