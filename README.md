@@ -12,7 +12,7 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 
 | Bài thực hành | Nội dung | Trạng thái |
 | --- | --- | --- |
-| [Lab 01](labs/lab01/) | Cập nhật theo đề bài | Chưa bắt đầu |
+| [Lab 01](labs/lab01/) | TF-IDF và Document Search | Đang thực hiện |
 
 ## Cấu trúc repository
 
