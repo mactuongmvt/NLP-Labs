@@ -1,1 +1,11 @@
-# Thêm các thư viện cần thiết sau khi đọc yêu cầu của từng bài lab.
+# Lab 01: TF-IDF experiments and document search
+ipykernel==7.3.0
+jupyterlab==4.6.3
+nbclient==0.11.0
+nbformat==5.11.1
+numpy==2.5.3
+pandas==3.0.6
+pytest==9.1.1
+scikit-learn==1.9.1
+scipy==1.18.1
+tokenizers==0.23.2

@@ -19,30 +19,48 @@
 lab01/
 ├── README.md
 ├── calculations.md
+├── Calculations&Prediction.pdf
 ├── prediction.md
 ├── implementation.py
-├── experiments.ipynb       # bổ sung khi nhận starter notebook và corpus
+├── experiments.ipynb
 ├── results.csv
-├── reflection.md
-└── tests/
-    └── test_implementation.py
+└── reflection.md
 ```
 
-## Chạy unit tests
+`Calculations&Prediction.pdf` là bản scan bài tính và prediction viết tay, được liên kết từ `calculations.md` và `prediction.md`.
 
-Từ thư mục gốc của repository:
+## Kiểm chứng core implementation
 
-```bash
-python -m pytest labs/lab01/tests -v
+`implementation.py` chứa sáu hàm cốt lõi và các hàm hỗ trợ thí nghiệm. TF được chuẩn hóa theo tổng số term và `IDF = ln(N/DF)`. Phần E trong notebook kiểm thử từng hàm, sau đó chuyển kết quả scikit-learn về cùng convention để đối chiếu.
+
+## Dữ liệu
+
+Notebook sử dụng corpus 30K documents do giảng viên cung cấp tại:
+
+```text
+data/raw/c4-train.00000-of-01024-30K.json.gz
 ```
 
-## Dữ liệu còn thiếu
+Dataset được `.gitignore` loại trừ và không được đưa lên GitHub.
 
-Phần thực nghiệm trên 30K documents cần corpus và starter notebook do giảng viên cung cấp. Không thay thế bằng dataset khác để bảo đảm đúng yêu cầu đề bài.
+## Chạy notebook
 
-## AI contribution
+```powershell
+.\.venv\Scripts\Activate.ps1
+jupyter lab
+```
 
-- AI generated the initial implementation of vocabulary construction, term counting, TF, IDF, TF-IDF, and cosine similarity.
-- AI generated initial unit tests for the core implementation.
-- The student will review the code, verify the formulas, run the experiments, and declare any later AI-assisted changes.
-- AI was not used to answer the calculation exercises, make pre-experiment predictions, interpret numerical results, perform error analysis, or write the reflection.
+Mở `labs/lab01/experiments.ipynb` và chọn **Run All Cells**. Notebook kiểm thử implementation, chạy ba pipeline, lưu retrieval cùng metric vào `results.csv`. Relevance labels nằm trong biến `reviewed_relevant` ở Part H và cần được kiểm tra lần cuối trước khi nộp.
+
+## Việc cần kiểm tra trước khi nộp
+
+1. Mở thử liên kết tới `Calculations&Prediction.pdf` trong `calculations.md` và `prediction.md`.
+2. Đối chiếu nội dung trong `prediction.md` với dự đoán đã ghi trước khi chạy thí nghiệm.
+3. Kiểm tra biến `reviewed_relevant` trong Part H của notebook.
+4. Chạy lại toàn bộ `experiments.ipynb` sau khi sửa nhãn và kiểm tra `results.csv`.
+5. Rà soát nhận xét kết quả, phần phân tích lỗi và `reflection.md`.
+6. Kiểm tra lại mục khai báo công cụ hỗ trợ.
+
+## Khai báo công cụ hỗ trợ
+
+AI được sử dụng để hỗ trợ về code, tổ chức thí nghiệm và gợi ý phân tích. Các kết quả, nhãn relevance và nội dung trình bày cần được kiểm tra lại trước khi nộp.
