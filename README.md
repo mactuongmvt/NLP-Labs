@@ -12,7 +12,7 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 
 | Bài thực hành | Nội dung | Trạng thái |
 | --- | --- | --- |
-| [Lab 01](labs/lab01/) | TF-IDF và Document Search | Đang thực hiện |
+| [Lab 01](labs/lab01/) | TF-IDF và Document Search | Hoàn thành |
 
 ## Cấu trúc repository
 
@@ -20,9 +20,11 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 NLP-Labs/
 ├── labs/
 │   └── lab01/
+│       ├── data/
+│       ├── experiments.ipynb
+│       ├── implementation.py
+│       ├── results.csv
 │       └── README.md
-├── data/
-│   └── README.md
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -50,6 +52,6 @@ pip install -r requirements.txt
 
 ## Quy ước
 
-- Không đưa dataset hoặc model dung lượng lớn lên Git.
-- Không đưa môi trường ảo, cache hay thông tin đăng nhập lên Git.
+- Dữ liệu do giảng viên yêu cầu được đặt trong thư mục `data/` của từng lab.
+- Không đưa môi trường ảo, cache, model sinh ra trong quá trình chạy hoặc thông tin đăng nhập lên Git.
 - Mỗi thay đổi hoàn chỉnh nên được lưu bằng một commit có nội dung rõ ràng.

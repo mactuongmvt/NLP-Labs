@@ -14,4 +14,4 @@ Bài lab cho thấy preprocessing làm thay đổi vocabulary, vector TF-IDF và
 
 ## Công cụ hỗ trợ
 
-AI được sử dụng để hỗ trợ ban đầu về code, tổ chức thí nghiệm và gợi ý cách phân tích kết quả. Các kết quả, nhãn relevance và nội dung trình bày cần được kiểm tra lại trước khi nộp.
+AI được sử dụng để hỗ trợ ban đầu về code, tổ chức thí nghiệm và gợi ý cách phân tích kết quả. Các kết quả, nhãn relevance và nội dung trình bày đã được đối chiếu với dữ liệu và yêu cầu của Lab 01.

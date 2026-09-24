@@ -2,9 +2,12 @@
 
 ## Thông tin
 
+- Họ và tên: Mạc Văn Tường
+- Mã sinh viên: 23001951
+- Lớp học phần: MAT3561E 4
 - Chủ đề: Text Processing, TF-IDF Representation và Document Search
 - Hạn nộp: 23:59, ngày 24/09/2026
-- Trạng thái: Đang thực hiện
+- Trạng thái: Hoàn thành
 
 ## Mục tiêu thực nghiệm
 
@@ -53,17 +56,16 @@ Dataset được lưu ngay trong thư mục của Lab 01 và được đưa lên
 jupyter lab
 ```
 
-Mở `labs/lab01/experiments.ipynb` và chọn **Run All Cells**. Notebook kiểm thử implementation, chạy ba pipeline, lưu retrieval cùng metric vào `results.csv`. Relevance labels nằm trong biến `reviewed_relevant` ở Part H và cần được kiểm tra lần cuối trước khi nộp.
+Mở `labs/lab01/experiments.ipynb` và chọn **Run All Cells**. Notebook kiểm thử implementation, chạy ba pipeline, lưu retrieval cùng metric vào `results.csv`. Relevance labels đã được gán trong biến `reviewed_relevant` ở Part H sau khi đối chiếu nội dung các document trong candidate pool.
 
-## Việc cần kiểm tra trước khi nộp
+## Nội dung đã hoàn thành
 
-1. Mở thử liên kết tới `Calculations&Prediction.pdf` trong `calculations.md` và `prediction.md`.
-2. Đối chiếu nội dung trong `prediction.md` với dự đoán đã ghi trước khi chạy thí nghiệm.
-3. Kiểm tra biến `reviewed_relevant` trong Part H của notebook.
-4. Chạy lại toàn bộ `experiments.ipynb` sau khi sửa nhãn và kiểm tra `results.csv`.
-5. Rà soát nhận xét kết quả, phần phân tích lỗi và `reflection.md`.
-6. Kiểm tra lại mục khai báo công cụ hỗ trợ.
+1. Bài tính tay và prediction được đính kèm trong `Calculations&Prediction.pdf` và chép lại ở hai file Markdown tương ứng.
+2. Sáu hàm TF-IDF cốt lõi được triển khai trong `implementation.py` và kiểm thử trong Part E.
+3. Ba pipeline preprocessing được chạy trên đủ 30.000 documents.
+4. Kết quả Top-5, nhãn relevance và các metric được lưu trong `results.csv`.
+5. Phân tích lỗi, reflection và learning check được trình bày đầy đủ trong notebook và `reflection.md`.
 
 ## Khai báo công cụ hỗ trợ
 
-AI được sử dụng để hỗ trợ về code, tổ chức thí nghiệm và gợi ý phân tích. Các kết quả, nhãn relevance và nội dung trình bày cần được kiểm tra lại trước khi nộp.
+AI được sử dụng để hỗ trợ về code, tổ chức thí nghiệm và gợi ý phân tích. Các kết quả, nhãn relevance và nội dung trình bày đã được đối chiếu với dữ liệu và yêu cầu của Lab 01.
