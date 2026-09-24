@@ -68,4 +68,4 @@ Mở `labs/lab01/experiments.ipynb` và chọn **Run All Cells**. Notebook kiể
 
 ## Khai báo công cụ hỗ trợ
 
-AI được sử dụng để hỗ trợ về code, tổ chức thí nghiệm và gợi ý phân tích. Các kết quả, nhãn relevance và nội dung trình bày đã được đối chiếu với dữ liệu và yêu cầu của Lab 01.
+AI được sử dụng để hỗ trợ về code, tổ chức thí nghiệm. Các kết quả, nhãn relevance và nội dung trình bày đã được đối chiếu với dữ liệu và yêu cầu của Lab 01.
