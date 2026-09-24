@@ -20,6 +20,9 @@ lab01/
 ├── README.md
 ├── calculations.md
 ├── Calculations&Prediction.pdf
+├── data/
+│   ├── README.md
+│   └── c4-train.00000-of-01024-30K.json.gz
 ├── prediction.md
 ├── implementation.py
 ├── experiments.ipynb
@@ -38,10 +41,10 @@ lab01/
 Notebook sử dụng corpus 30K documents do giảng viên cung cấp tại:
 
 ```text
-data/raw/c4-train.00000-of-01024-30K.json.gz
+labs/lab01/data/c4-train.00000-of-01024-30K.json.gz
 ```
 
-Dataset được `.gitignore` loại trừ và không được đưa lên GitHub.
+Dataset được lưu ngay trong thư mục của Lab 01 và được đưa lên repository theo yêu cầu của giảng viên. Notebook đọc trực tiếp file nén `.json.gz`, không cần giải nén.
 
 ## Chạy notebook
 

@@ -31,7 +31,3 @@ checkpoints/
 *.pt
 *.pth
 *.ckpt
-
-# Dataset files are ignored by default; keep documentation
-data/*
-!data/README.md
