@@ -7,4 +7,4 @@
 - Các trường: `text`, `timestamp`, `url`.
 - Vị trí: `labs/lab01/data/c4-train.00000-of-01024-30K.json.gz`.
 
-File dữ liệu được lưu trong repository theo yêu cầu của giảng viên. Notebook đọc trực tiếp định dạng `.json.gz`, vì vậy không cần giải nén.
+
