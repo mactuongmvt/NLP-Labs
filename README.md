@@ -13,16 +13,23 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 | Bài thực hành | Nội dung | Trạng thái |
 | --- | --- | --- |
 | [Lab 01](labs/lab01/) | TF-IDF và Document Search | Hoàn thành |
+| [Lab 02](labs/lab02/) | N-gram Language Models | Hoàn thành |
 
 ## Cấu trúc repository
 
 ```text
 NLP-Labs/
 ├── labs/
-│   └── lab01/
+│   ├── lab01/
+│   │   ├── data/
+│   │   ├── experiments.ipynb
+│   │   ├── implementation.py
+│   │   ├── results.csv
+│   │   └── README.md
+│   └── lab02/
 │       ├── data/
 │       ├── experiments.ipynb
-│       ├── implementation.py
+│       ├── ngram_lm.py
 │       ├── results.csv
 │       └── README.md
 ├── .gitignore
