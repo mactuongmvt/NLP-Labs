@@ -6,7 +6,7 @@ Phần này dùng model Word2Vec baseline (`vector_size = 100`, `window = 5`) tr
 
 ### 1. `doctor` – `physician`
 
-- Similarity: `0,748929`
+- Similarity: `0,700131`
 - Corpus count: `doctor = 263`, `physician = 86`
 - Số lần `physician` nằm trực tiếp trong window 5 của `doctor`: 0
 
@@ -14,7 +14,7 @@ Hai từ không cần đứng cạnh nhau để có vector gần nhau. Chúng c�
 
 ### 2. `doctor` – `hospital`
 
-- Similarity: `0,569727`
+- Similarity: `0,524763`
 - Corpus count: `doctor = 263`, `hospital = 356`
 - Số lần `hospital` nằm trong window 5 của `doctor`: 1
 
@@ -22,7 +22,7 @@ Hai từ cùng xuất hiện trong các context về `care` và `health`. Simila
 
 ### 3. `cat` – `dog`
 
-- Similarity: `0,594239`
+- Similarity: `0,619464`
 - Corpus count: `cat = 218`, `dog = 428`
 
 `cat` và `dog` thường xuất hiện trong các context giống nhau như `food`, `your`, `my` và các câu nói về vật nuôi. Vì vậy model đặt hai từ tương đối gần nhau.
@@ -31,7 +31,7 @@ Hai từ cùng xuất hiện trong các context về `care` và `health`. Simila
 
 ### 4. `doctor` – `dentist`
 
-- Similarity: `0,741220`
+- Similarity: `0,726909`
 - Corpus count: `doctor = 263`, `dentist = 49`
 - Số lần `dentist` nằm trong window 5 của `doctor`: 1
 
@@ -39,7 +39,7 @@ Similarity gần bằng cặp `doctor`–`physician` dù `dentist` ít xuất hi
 
 ### 5. `doctor` – `veterinarian`
 
-- Similarity: `0,713972`
+- Similarity: `0,721922`
 - Corpus count: `doctor = 263`, `veterinarian = 20`
 - Số lần `veterinarian` nằm trong window 5 của `doctor`: 0
 
@@ -47,7 +47,7 @@ Similarity gần bằng cặp `doctor`–`physician` dù `dentist` ít xuất hi
 
 ### 6. `doctor` – `ophthalmologist`
 
-- Similarity: `0,702674`
+- Similarity: `0,733865`
 - Corpus count: `doctor = 263`, `ophthalmologist = 10`
 - Số lần `ophthalmologist` nằm trong window 5 của `doctor`: 0
 

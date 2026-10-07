@@ -5,16 +5,16 @@
 Với thứ tự context:
 
 ```text
-[the, cat, dog, eats, likes, fish, milk, meat]
+[cat, dog, eats, likes, fish, milk, meat]
 ```
 
 và `window = 1`, các vector là:
 
 ```text
-cat   = [2, 0, 0, 1, 1, 0, 0, 0]
-dog   = [2, 0, 0, 1, 1, 0, 0, 0]
-eats  = [0, 1, 1, 0, 0, 2, 0, 0]
-likes = [0, 1, 1, 0, 0, 0, 1, 1]
+cat   = [0, 0, 1, 1, 0, 0, 0]
+dog   = [0, 0, 1, 1, 0, 0, 0]
+eats  = [1, 1, 0, 0, 2, 0, 0]
+likes = [1, 1, 0, 0, 0, 1, 1]
 ```
 
 `cat` và `dog` có cùng vector vì chúng xuất hiện cạnh các context giống nhau trong corpus này.
