@@ -11,7 +11,7 @@
 
 ## Tại sao `bank` cần contextual representation?
 
-`bank` có thể là ngân hàng hoặc bờ sông. Word2Vec chỉ tạo một vector chung nên hai nghĩa bị trộn với nhau. Contextual embedding tạo vector dựa trên câu đang xét, vì vậy có thể biểu diễn hai nghĩa khác nhau.
+`bank` có thể mang nghĩa “ngân hàng” trong ngữ cảnh tài chính hoặc “bờ sông” trong ngữ cảnh địa lý. Word2Vec chỉ học một vector duy nhất cho mỗi từ, nên vector của `bank` phải tổng hợp thông tin từ nhiều ngữ cảnh và không thể biểu diễn riêng từng nghĩa. Contextual embedding tạo vector dựa trên câu đang xét nên có thể phân biệt hai nghĩa này.
 
 ## Kết luận
 

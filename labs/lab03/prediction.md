@@ -2,24 +2,24 @@
 
 ## Prediction 1 — Những từ gần nhau
 
-- Prediction: `doctor` gần `physician` nhất, sau đó đến `hospital`. `banana` và `car` sẽ ở xa hơn.
-- Reason: `doctor` và `physician` thường xuất hiện trong các context liên quan đến bệnh nhân và điều trị.
+- Prediction: `doctor` và `physician` sẽ có similarity cao nhất. `hospital` cũng khá gần nghĩa với hai từ này.
+- Reason: `doctor` và `physician` đều có nghĩa là bác sĩ, còn `hospital` liên quan vì bác sĩ thường làm việc ở bệnh viện.
 - Confidence: cao.
 
 ## Prediction 2 — Context window
 
-- Prediction: similarity sẽ thay đổi khi window tăng từ 2 lên 5.
-- Reason: window lớn hơn đưa thêm các từ xa vào context, nên vector chứa nhiều thông tin chủ đề hơn nhưng cũng có thể thêm nhiễu.
+- Prediction: similarity có thể thay đổi khi context window tăng từ 2 lên 5.
+- Reason: window lớn hơn làm mỗi từ được biểu diễn dựa trên nhiều từ xung quanh hơn. Điều này làm thay đổi vector context và có thể làm thay đổi cosine similarity. Window lớn hơn có thể thu được nhiều thông tin ngữ nghĩa hơn nhưng cũng có thể thêm những context ít liên quan.
 - Confidence: cao.
 
 ## Prediction 3 — Embedding dimension
 
-- Prediction: tăng dimension từ 50 lên 100 có thể giúp model biểu diễn tốt hơn, nhưng 300 chiều không chắc chắn tốt nhất.
-- Reason: dimension lớn cần nhiều dữ liệu và thời gian huấn luyện hơn; corpus không đủ lớn có thể làm các chiều bổ sung không hữu ích.
-- Confidence: trung bình.
+- Prediction: tăng dimension không chắc chắn làm chất lượng embedding tốt hơn.
+- Reason: dimension lớn giúp model biểu diễn nhiều thông tin hơn nhưng cũng cần nhiều dữ liệu và chi phí tính toán hơn. Nếu corpus không đủ lớn, tăng dimension có thể không cải thiện chất lượng embedding.
+- Confidence: cao.
 
 ## Prediction 4 — Corpus nhỏ
 
-- Prediction: `doctor` và `physician` không chắc chắn gần nhau nếu corpus chỉ có 100 câu.
-- Reason: hai từ có thể xuất hiện quá ít hoặc không có đủ context chung để model học được quan hệ.
+- Prediction: `doctor` và `physician` không chắc chắn có similarity cao nếu corpus chỉ có 100 câu.
+- Reason: word embedding phụ thuộc vào ngữ cảnh xuất hiện của từ trong corpus. Với 100 câu, dữ liệu có thể không đủ để `doctor` và `physician` xuất hiện nhiều lần trong các context tương tự, nên model có thể chưa học được mối quan hệ ngữ nghĩa giữa hai từ một cách rõ ràng.
 - Confidence: cao.

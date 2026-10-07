@@ -11,6 +11,7 @@ Lab này xây dựng word-context representation, huấn luyện Word2Vec và đ
 
 - `calculations.md`: bài tính toán
 - `prediction.md`: dự đoán trước thí nghiệm
+- `calculations&prediction.pdf`: bản scan bài tính toán và prediction viết tay
 - `cooccurrence.py`: cài đặt co-occurrence representation
 - `word_embedding.ipynb`: các thí nghiệm
 - `results.csv`: kết quả similarity, analogy và semantic search

@@ -5,16 +5,16 @@
 Với thứ tự context:
 
 ```text
-[cat, dog, eats, likes, fish, milk, meat]
+[the, cat, dog, eats, likes, fish, milk, meat]
 ```
 
 và `window = 1`, các vector là:
 
 ```text
-cat   = [0, 0, 1, 1, 0, 0, 0]
-dog   = [0, 0, 1, 1, 0, 0, 0]
-eats  = [1, 1, 0, 0, 2, 0, 0]
-likes = [1, 1, 0, 0, 0, 1, 1]
+cat   = [2, 0, 0, 1, 1, 0, 0, 0]
+dog   = [2, 0, 0, 1, 1, 0, 0, 0]
+eats  = [0, 1, 1, 0, 0, 2, 0, 0]
+likes = [0, 1, 1, 0, 0, 0, 1, 1]
 ```
 
 `cat` và `dog` có cùng vector vì chúng xuất hiện cạnh các context giống nhau trong corpus này.
@@ -73,10 +73,10 @@ Kết quả đúng với dự đoán: `physician` gần `doctor` hơn.
 
 ## Bài 4 — Sparse và dense
 
-1. Word-context representation 10.000 chiều với 30 giá trị khác 0 là sparse.
-2. Embedding 300 chiều với hầu hết thành phần khác 0 là dense.
-3. Dense representation có số chiều nhỏ hơn và có thể đặt các từ dùng trong context tương tự ở gần nhau, nên thuận lợi hơn khi tính semantic similarity.
-4. Dense representation không chắc chắn tốt hơn trong mọi bài toán. Count hoặc TF-IDF vẫn hữu ích khi cần thông tin từ xuất hiện chính xác và dễ giải thích.
+1. Biểu diễn 10.000 chiều nhưng chỉ có 30 giá trị khác 0 là sparse representation vì phần lớn phần tử của vector bằng 0.
+2. Embedding 300 chiều với hầu hết giá trị khác 0 là dense representation.
+3. Dense representation có thể thuận lợi cho semantic similarity vì nó biểu diễn thông tin ngữ cảnh và ngữ nghĩa trong không gian có số chiều nhỏ hơn. Những từ xuất hiện trong các ngữ cảnh tương tự thường có vector gần nhau, nên cosine similarity có thể đo mức độ tương đồng ngữ nghĩa hiệu quả hơn biểu diễn sparse chỉ dựa trên tần suất xuất hiện.
+4. Dense representation không chắc chắn tốt hơn trong mọi bài toán. Dense phù hợp với bài toán cần semantic similarity và giảm số chiều biểu diễn, còn sparse dễ giải thích hơn và phù hợp với bài toán cần thông tin về sự xuất hiện hoặc tần suất chính xác của từ. Việc lựa chọn phụ thuộc vào bài toán cụ thể.
 
 ## CBOW và Skip-gram
 
@@ -116,4 +116,4 @@ king - man + woman
 = [8, 4, 7]
 ```
 
-Vector mới có thể biểu diễn quan hệ từ một người nam thuộc hoàng gia sang một người nữ thuộc hoàng gia, nên từ được kỳ vọng là `queen`.
+Vector mới có thể đại diện cho một từ có quan hệ với `king` tương tự quan hệ giữa `woman` và `man`, chẳng hạn như `queen`. Đây là ví dụ về gender pattern có thể tồn tại trong không gian embedding.
