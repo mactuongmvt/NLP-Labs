@@ -33,8 +33,7 @@ Mở `labs/lab03/word_embedding.ipynb` và chọn **Run All Cells**.
 
 ## AI assistance statement
 
-- Tool: OpenAI Codex.
-- Purpose: hỗ trợ implementation, debugging và trình bày kết quả.
-- Generated content: một phần code và Markdown trong notebook.
-- Modified content: tôi kiểm tra và chỉnh lại nội dung theo kết quả chạy thực tế.
-- Verification: chạy lại toàn bộ notebook và đối chiếu kết quả với `results.csv`.
+- Hỗ trợ kiểm tra code, debugging, chỉnh một số phần trình bày và giải thích lỗi trong quá trình làm lab.
+- Một phần code hỗ trợ thí nghiệm, kiểm tra implementation và một số nội dung trình bày.
+- Nội dung được chỉnh lại để phù hợp với implementation và kết quả thực nghiệm của bài.
+- Chạy lại notebook, kiểm tra các phép tính cơ bản và đối chiếu kết quả với `results.csv`.
