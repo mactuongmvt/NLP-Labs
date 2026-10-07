@@ -14,6 +14,7 @@ Kho lưu trữ các bài thực hành môn **Xử lý ngôn ngữ tự nhiên**.
 | --- | --- | --- |
 | [Lab 01](labs/lab01/) | TF-IDF và Document Search | Hoàn thành |
 | [Lab 02](labs/lab02/) | N-gram Language Models | Hoàn thành |
+| [Lab 03](labs/lab03/) | Word Representations and Embeddings | Hoàn thành |
 
 ## Cấu trúc repository
 
@@ -26,10 +27,16 @@ NLP-Labs/
 │   │   ├── implementation.py
 │   │   ├── results.csv
 │   │   └── README.md
-│   └── lab02/
+│   ├── lab02/
+│   │   ├── data/
+│   │   ├── experiments.ipynb
+│   │   ├── ngram_lm.py
+│   │   ├── results.csv
+│   │   └── README.md
+│   └── lab03/
 │       ├── data/
-│       ├── experiments.ipynb
-│       ├── ngram_lm.py
+│       ├── word_embedding.ipynb
+│       ├── cooccurrence.py
 │       ├── results.csv
 │       └── README.md
 ├── .gitignore
