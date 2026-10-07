@@ -45,7 +45,7 @@ Hai vector có độ lớn khác nhau nhưng cùng hướng vì `y = 2x`. Điề
 ```text
 doctor    = [0,8; 0,1; 0,7]
 physician = [0,7; 0,2; 0,8]
-nurse     = [-0,2; 0,9; -0,1]
+banana    = [-0,2; 0,9; -0,1]
 ```
 
 Dự đoán trước khi tính: `physician` gần `doctor` hơn.
@@ -61,10 +61,10 @@ cos(doctor, physician)
 ```
 
 ```text
-doctor · nurse = -0,14
-||nurse|| = √0,86
+doctor · banana = -0,14
+||banana|| = √0,86
 
-cos(doctor, nurse)
+cos(doctor, banana)
 = -0,14 / (√1,14 × √0,86)
 ≈ -0,1414
 ```

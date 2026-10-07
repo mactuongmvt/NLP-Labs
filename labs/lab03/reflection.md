@@ -11,8 +11,10 @@
 
 ## Tại sao `bank` cần contextual representation?
 
-`bank` có thể mang nghĩa “ngân hàng” trong ngữ cảnh tài chính hoặc “bờ sông” trong ngữ cảnh địa lý. Word2Vec chỉ học một vector duy nhất cho mỗi từ, nên vector của `bank` phải tổng hợp thông tin từ nhiều ngữ cảnh và không thể biểu diễn riêng từng nghĩa. Contextual embedding tạo vector dựa trên câu đang xét nên có thể phân biệt hai nghĩa này.
+`bank` có thể có nghĩa là “ngân hàng” trong câu về tiền bạc, nhưng cũng có thể có nghĩa là “bờ sông” trong một câu khác.
+
+Word2Vec chỉ tạo một vector cố định cho từ `bank`, nên hai nghĩa này vẫn dùng chung một representation. Contextual embedding tạo vector dựa trên câu hiện tại, vì vậy cùng một từ `bank` có thể có representation khác nhau khi context thay đổi.
 
 ## Kết luận
 
-Co-occurrence và Word2Vec đều học từ context, nhưng Word2Vec tạo vector dense nhỏ hơn. Kết quả phụ thuộc nhiều vào corpus, window và dimension. Context dài hoặc vector lớn hơn không phải lúc nào cũng tốt hơn nếu dữ liệu không đủ.
+TF-IDF và co-occurrence là các representation sparse, còn Word2Vec tạo dense word vectors. Hạn chế của Word2Vec là mỗi từ chỉ có một vector cố định. Contextual embedding giải quyết tốt hơn trường hợp một từ có nhiều nghĩa phụ thuộc vào context.
