@@ -1,0 +1,7 @@
+model,representation,split,training_time_sec,vocabulary_size,accuracy,precision,recall,f1
+Logistic Regression,TF-IDF unigram,validation,7.45,48495,0.895623,0.884211,0.911392,0.897596
+Logistic Regression,TF-IDF unigram,test,7.45,48495,0.898155,0.890837,0.908379,0.899522
+Logistic Regression,Average Word2Vec,validation,155.271,54102,0.866478,0.859335,0.877637,0.86839
+Logistic Regression,Average Word2Vec,test,155.271,54102,0.864778,0.860143,0.872413,0.866234
+Logistic Regression,TF-IDF unigram + bigram,validation,24.169,100000,0.904901,0.896579,0.916215,0.90629
+Logistic Regression,TF-IDF unigram + bigram,test,24.169,100000,0.905919,0.898031,0.916616,0.907229

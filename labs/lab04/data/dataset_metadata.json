@@ -1,0 +1,40 @@
+{
+  "dataset": "Large Movie Review Dataset (IMDb)",
+  "source_url": "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+  "archive_sha256": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+  "raw_labeled_samples": 50000,
+  "raw_class_counts": {
+    "0": 25000,
+    "1": 25000
+  },
+  "raw_missing_text": 0,
+  "raw_missing_labels": 0,
+  "raw_duplicate_documents": 418,
+  "raw_duplicate_label_conflicts": 0,
+  "samples_after_deduplication": 49582,
+  "random_seed": 42,
+  "split_ratio": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  },
+  "split_sizes": {
+    "train": 29749,
+    "validation": 9916,
+    "test": 9917
+  },
+  "split_class_counts": {
+    "train": {
+      "0": 14819,
+      "1": 14930
+    },
+    "validation": {
+      "0": 4939,
+      "1": 4977
+    },
+    "test": {
+      "0": 4940,
+      "1": 4977
+    }
+  }
+}
