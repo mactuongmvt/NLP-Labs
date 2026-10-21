@@ -1,0 +1,9 @@
+experiment,model,representation,parameters,training_time_sec,epochs,max_length,vocabulary_size,train_samples,validation_samples,test_samples,accuracy,precision,recall,f1
+lab04_reference,Logistic Regression,TF-IDF unigram + bigram,,24.169,,,100000,29749,9916,9917,0.905919,0.898031,0.916616,0.907229
+baseline_subset,Logistic Regression,TF-IDF unigram + bigram,15001.0,2.295,1.0,,15000,4000,1000,2000,0.87,0.860624,0.883,0.871668
+architecture,RNN,Embedding,482145.0,3.979,8.0,100.0,15000,4000,1000,2000,0.592,0.591089,0.597,0.59403
+architecture,LSTM,Embedding,488481.0,12.844,8.0,100.0,15000,4000,1000,2000,0.658,0.663561,0.641,0.652085
+architecture,GRU,Embedding,486369.0,10.185,8.0,100.0,15000,4000,1000,2000,0.6775,0.720497,0.58,0.642659
+sequence_length,GRU,Embedding,486369.0,4.442,8.0,50.0,15000,4000,1000,2000,0.645,0.640232,0.662,0.650934
+sequence_length,GRU,Embedding,486369.0,10.185,8.0,100.0,15000,4000,1000,2000,0.6775,0.720497,0.58,0.642659
+sequence_length,GRU,Embedding,486369.0,34.31,8.0,200.0,15000,4000,1000,2000,0.716,0.701493,0.752,0.725869
