@@ -1,0 +1,3 @@
+model,representation,parameters,training_time_sec,epochs,max_length,vocabulary_size,train_samples,validation_samples,test_samples,accuracy,precision,recall,f1
+LSTM,final LSTM hidden state,264514,21.78,5,100,8000,4000,1000,2000,0.602,0.578101,0.755,0.654814
+Self-Attention,self-attention + masked mean pooling,259138,3.55,5,100,8000,4000,1000,2000,0.7275,0.735751,0.71,0.722646
