@@ -51,8 +51,6 @@ Mở `labs/lab07/transformer_classification.ipynb` và chọn **Run All Cells**.
 
 ## AI assistance statement
 
-- Tool: OpenAI Codex.
-- Purpose: hỗ trợ implementation, debugging, visualization và trình bày bài lab.
-- Generated: code hỗ trợ thí nghiệm và một phần nội dung Markdown.
-- Modified: nội dung được đối chiếu với đề, implementation và output thực tế.
-- Verified: chạy notebook, kiểm tra shape, attention mask, positional encoding và đối chiếu kết quả với `results.csv`.
+- Hỗ trợ kiểm tra code, debugging, chỉnh một số phần trình bày và giải thích lỗi trong quá trình làm lab.
+- Một phần code hỗ trợ thí nghiệm, kiểm tra implementation và một số nội dung trình bày.
+- Chạy lại notebook, kiểm tra các phép tính cơ bản và đối chiếu kết quả với `results.csv`.
